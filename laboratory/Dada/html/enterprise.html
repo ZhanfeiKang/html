@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>企业号平台</title>
+
+    <link rel="icon" type="image/x-icon" href="../images/icon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/vue.js"></script>
+
+    <style>
+        #header{
+            background: url(../images/enterprise.jpg) no-repeat;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container-fluid" id="header">
+        <div class="container">
+            <div class="col-md-6 col-xs-6">
+                <h1 :style="[h1Style]">搭搭企业号平台</h1>
+            </div>
+            <div class="col-md-4 col-md-push-2 col-xs-6" :style="[form]">
+                <h3 :style="[center, phone]">手机号登录</h3>
+                <form action="" class="form-horizontal center-block" role="form">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <div class="col-md-9 col-md-push-1" :style="[line]">
+                                <input type="text" placeholder="搭搭所绑定的号码" class="form-control" :style="[height]" id="stuname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-5 col-md-push-1">
+                                <input type="text" placeholder="手机验证码" class="form-control" :style="[height]" id="">
+                            </div>
+                            <div class="col-md-5 col-md-push-1">
+                                <button type="button" class="btn btn-info" :style="[height]">获取验证码</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-push-1">
+                            <input type="submit" class="form-control" value="登录" :style="[submit]">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        // document.getElementById("jumbotron-bg").style.height = window.screen.height-130+"px";
+        // alert(window.screen.height);
+         // 页眉
+         var header = new Vue({
+            el: '#header',
+            data: {
+                h1Style:{
+                    'font-size': '60px',
+                    'color': 'white',
+                    'font-weight': '900',
+                    'line-height': '600px'
+                },
+                form:{
+                    'background-color': 'white',
+                    'height': '360px',
+                    'margin-top': '120px',
+                    'border-radius': '10px'
+                },
+                center:{
+                    'text-align': 'center'
+                },
+                phone:{
+                    'line-height': '70px'
+                },
+                height:{
+                    'height': '40px',
+                    'border-color': 'rgb(49,176,213)',
+                    'border-radius': '8px'
+                },
+                submit:{
+                    'height': '45px',
+                    'line-height': '30px',
+                    'display': 'block',
+                    'font-size': '25px',
+                    'background-color': 'rgb(255,89,109)',
+                    'color': 'white',
+                    'border-radius': '22.5px',
+                    'width': '100%'
+                }
+            }
+        })
+    </script>
+
+    <div class="container-fluid" id="marketing" style="background-color: rgb(238, 241, 248);">
+        <div class="container">
+            <hr>
+            <h1 :style="[qyyx]">企业营销</h1>
+            
+            <h1 :style="[h1style]">为什么选择搭搭</h1>
+            <p :style="[pstyle]">年轻人热爱的生活分享平台</p>
+
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <h1>人群</h1>
+                    <p :style="[p1style]">最具社交驱动力和消费力的年轻人</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <h1>场景</h1>
+                    <p :style="[p1style]">分享生活方式，探索生活灵感，直击消费决策</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <h1>内容</h1>
+                    <p :style="[p1style]">美好、真实、多元的社区氛围；用户信任的生活方式内容</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <h1>效果</h1>
+                    <p :style="[p1style]">高互动成就用户真实口碑，成为年轻人热爱的品牌</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var qyyx = new Vue({
+            el: '#marketing',
+            data: {
+                qyyx:{
+                    'font-size': '45px',
+                    'font-weight': '500',
+                    'line-height': '160px',
+                    'text-align': 'center'
+                },
+                h1style:{
+                    'font-size': '48px',
+                    'font-weight': '700',
+                    'line-height': '100px',
+                    'text-align': 'center'
+                },
+                pstyle:{
+                    'font-size': '25px',
+                    'text-align': 'center',
+                    'line-height': '30px',
+                    'color': 'grey',
+                    'margin-bottom': '90px'
+                },
+                p1style:{
+                    'font-size': '18px',
+                    'color': 'grey',
+                    'margin-bottom': '100px'
+                }
+            }
+        })
+    </script>
+
+    <div class="container-fluid" id="function" style="background-color: rgb(243, 247, 253);padding-bottom: 100px;">
+        <div class="container">
+            <h1 :style="[qyyx]">职业职能</h1>
+
+            <div class="row" style="padding-left: 100px;">
+                <div class="col-md-3 col-xs-6" :style="[white]">
+                    <h3 :style="[center]">官方认证</h3>
+                    <p :style="[center, pstyle]">
+                        官方认证标识<br>
+                        拥有更多展示入口
+                    </p>
+                </div>
+                <div class="col-md-3 col-xs-6" :style="[white]">
+                    <h3 :style="[center]">创作者合作</h3>
+                    <p :style="[center, pstyle]">
+                        规范社区推广<br>
+                        品牌与用户深度连接
+                    </p>
+                </div>
+                <div class="col-md-3 col-xs-6" :style="[white]">
+                    <h3 :style="[center]">粉丝互动</h3>
+                    <p :style="[center, pstyle]">
+                        多种运营工具<br>
+                        进行更多粉丝互动
+                    </p>
+                </div>
+                <div class="col-md-3 col-xs-6" :style="[white]">
+                    <h3 :style="[center]">数据洞察</h3>
+                    <p :style="[center, pstyle]">
+                        多维数据报告<br>
+                        实现数据驱动运营
+                    </p>
+                </div>
+                <div class="col-md-3 col-xs-6" :style="[white]">
+                    <h3 :style="[center]">增值功能</h3>
+                    <p :style="[center, pstyle]">
+                        绑定官方店铺<br>
+                        实现流量高效转化
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var zyzn = new Vue({
+            el: '#function',
+            data: {
+                qyyx:{
+                    'font-size': '45px',
+                    'font-weight': '500',
+                    'line-height': '160px',
+                    'text-align': 'center'
+                },
+                white:{
+                    'background-color': 'white',
+                    'border-radius': '10px',
+                    'padding': '30px 50px',
+                    'margin': '20px'
+                },
+                center:{
+                    'text-align': 'center'
+                },
+                pstyle:{
+                    'color': 'grey',
+                    'font-size': '16px',
+                    'line-height': '30px'
+                },
+                h3style:{
+                    'font-size': '30px'
+                }
+            }
+        })
+    </script>
+
+    <div class="container-fluid" id="apply" style="background-color: rgb(238, 241, 248);">
+        <div class="container">
+            <h1 :style="[qyyx]">申请流程</h1>
+
+            <div class="row">
+                <div class="col-md-3 col-md-push-1 col-xs-6" :style="[white]">
+                    <h3 :style="[center, h3style]"><span :style="[num]">01</span> 注册搭搭账号</h3>
+                    <p :style="[center, pstyle]">
+                        注册搭搭账号并为该账号绑定手机
+                    </p>
+                </div>
+                <div class="col-md-3 col-md-push-1 col-xs-6" :style="[white]">
+                    <h3 :style="[center]"><span :style="[num]">02</span> 提交资质进行审核</h3>
+                    <p :style="[center, pstyle]">
+                        登录搭搭企业号平台，提交相关认证资质进行审核，我们将在三个工作日内完成审核
+                    </p>
+                    <p :style="[center]"><a href="#">资质审核标准></a></p>
+                </div>
+                <div class="col-md-3 col-md-push-1 col-xs-6" :style="[white]">
+                    <h3 :style="[center]"><span :style="[num]">03</span> 开启账号全新功能</h3>
+                    <p :style="[center, pstyle]">
+                        审核通过后我们将会为您开启全新功能
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-md-push-3" :style="[foot]">
+                <div class="col-md-3" :style="[center]">
+                    <a href="#" :style="[grey]">关于搭搭</a>
+                </div>
+                <div class="col-md-3" :style="[center]">
+                    <a href="#" :style="[grey]">认证协议</a>
+                </div>
+                <div class="col-md-3" :style="[center]">
+                    <a href="#" :style="[grey]">帮助中心</a>
+                </div>
+                <div class="col-md-3" :style="[center]">
+                    <a href="#" :style="[grey]">侵权投诉</a>
+                </div>
+            </div>
+            
+        </div>
+        <div style="text-align: center;color: grey;line-height: 60px;">长江大学创新团队
+            | 地址：湖北省荆州市长江大学东校区
+            | 电话：1235353545</div>
+    </div>
+
+    <script>
+        var sqlc = new Vue({
+            el: '#apply',
+            data: {
+                qyyx:{
+                    'font-size': '45px',
+                    'font-weight': '500',
+                    'line-height': '160px',
+                    'text-align': 'center'
+                },
+                white:{
+                    'background-color': 'white',
+                    'border-radius': '10px',
+                    'padding': '30px 50px',
+                    'margin': '20px',
+                    'height': '300px'
+                },
+                center:{
+                    'text-align': 'center'
+                },
+                pstyle:{
+                    'color': 'grey',
+                    'font-size': '16px',
+                    'line-height': '30px'
+                },
+                h3style:{
+                    'font-size': '28px',
+                    'font-weight': '500'
+                },
+                num:{
+                    'color': 'red',
+                    'font-size': '35px'
+                },
+                foot:{
+                    'margin': '100px 0 0 0'
+                },
+                grey:{
+                    'color': 'grey'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>设计师平台</title>
+
+    <link rel="icon" type="image/x-icon" href="../images/icon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div class="container-fluid" id="header">
+
+    
+        <header class="container" style="margin-top: 50px;">
+            <div class="row" :style="[center]">
+                <a href="#"><img src="../images/guang.png" alt="" title="前往注册" class="img-responsive img-rounded"></a>
+            </div>
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-md-9">
+                    <div class="col-md-12"><h3>最新发布</h3><hr></div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6" style="margin-bottom: 20px;">
+                            <div class="media" :style="[media]">
+                                <a href="#" class="media-top">
+                                    <img src="../images/test9.png" class="img-responsive center-block" :style="[img]" />
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="media-heading" :style="[h3]">天啦撸~让人幸福感爆棚的零食饮料分享</h3>
+                                    <p :style="[name]" title="Zrue">Zrue</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6" style="margin-bottom: 20px;">
+                            <div class="media" :style="[media]">
+                                <a href="#" class="media-top">
+                                    <img src="../images/test10.png" class="img-responsive center-block" :style="[img]" />
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="media-heading" :style="[h3]">520礼物 @KADER手链 御猫的守护</h3>
+                                    <p :style="[name]" title="星星">星星</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6" style="margin-bottom: 20px;">
+                            <div class="media" :style="[media]">
+                                <a href="#" class="media-top">
+                                    <img src="../images/test11.png" class="img-responsive center-block" :style="[img]" />
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="media-heading" :style="[h3]">最美眼妆分享</h3>
+                                    <p :style="[name]" title="搭搭5E2sds">搭搭5E2sds</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6" style="margin-bottom: 20px;">
+                            <div class="media" :style="[media]">
+                                <a href="#" class="media-top">
+                                    <img src="../images/test5.png" class="img-responsive center-block" :style="[img]" />
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="media-heading" :style="[h3]">美好的假期结束了</h3>
+                                    <p :style="[name]" title="Mi&Sa">Mi&Sa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6" style="margin-bottom: 20px;">
+                            <div class="media" :style="[media]">
+                                <a href="#" class="media-top">
+                                    <img src="../images/test6.png" class="img-responsive center-block" :style="[img]" />
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="media-heading" :style="[h3]">秀身材篇 | 肌肉型女生</h3>
+                                    <p :style="[name]" title="陈yuyu">陈yuyu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6" style="margin-bottom: 20px;">
+                            <div class="media" :style="[media]">
+                                <a href="#" class="media-top">
+                                    <img src="../images/test8.png" class="img-responsive center-block" :style="[img]" />
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="media-heading" :style="[h3]">发型进化史</h3>
+                                    <p :style="[name]" title="一只鹅">一只鹅</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div><h3>热门设计师</h3><hr></div>
+                    <ul class="list-group">
+                        <a href="./chat.html" target="blank"><li class="list-group-item" title="撩他">丛霏薇薇Ka<span class="badge" style="color:red;background:lightcoral;">1</span></li></a>
+                        <li class="list-group-item">Zrue<span class="badge" style="color:green;background:lightgreen;">2</span></li>
+                        <li class="list-group-item">星星<span class="badge" style="color:red;background:lightsalmon;">3</span></li>
+                        <li class="list-group-item">Mi&Sa<span class="badge" style="color:green;background:pink;">4</span></li>
+                        <li class="list-group-item">陈yuyu<span class="badge" style="color:green;background:lightblue;">5</span></li>
+                        <li class="list-group-item">一只鹅<span class="badge" style="color:red;background:lightgray;">6</span></li>
+                        <li class="list-group-item">Serena<span class="badge" style="color:green;background:lightseagreen;">7</span></li>
+                        <li class="list-group-item">帝仕尼尔<span class="badge" style="color:green;background:lightsalmon;">8</span></li>
+                        <li class="list-group-item">李哈哈<span class="badge" style="color:green;background:pink;">9</span></li>
+                        <li class="list-group-item">udafu<span class="badge" style="color:green;background:lightblue;">10</span></li>
+                        <li class="list-group-item">江te<span class="badge" style="color:red;background:lightgray;">11</span></li>
+                        <li class="list-group-item">tule<span class="badge" style="color:green;background:lightseagreen;">12</span></li>
+                        <li class="list-group-item">搭搭3Dsgf<span class="badge" style="color:green;background:lightsalmon;">13</span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid" style="margin-top: 70px;background-color: rgb(251,251,251);padding-top: 50px;">
+            <div class="container" style="height: 40px;">
+                <div class="col-md-3 col-xs-6" :style="[center]">
+                    <a href="./userAgreement.html" target="blank" :style="[row2]">用户协议</a>
+                </div>
+                <div class="col-md-3 col-xs-6" :style="[center]">
+                    <a href="./Policy.html" target="blank" :style="[row2]">隐私政策</a>
+                </div>
+                <div class="col-md-3 col-xs-6" :style="[center]">
+                    <a href="./complain.html" target="blank" :style="[row2]">侵权投诉指引</a>
+                </div>
+                <div class="col-md-3 col-xs-6" :style="[center]">
+                    <a href="./standard.html" target="blank" :style="[row2]">社区规范</a>
+                </div>
+            </div>
+            <div style="text-align: center;margin-bottom: 30px;">长江大学创新团队
+                | 地址：湖北省荆州市长江大学东校区
+                | 电话：1235353545</div>
+        </div>
+    </div>
+    <script>
+         var jrjx = new Vue({
+            el: '#header',
+            data: {
+                center:{
+                    'text-align': 'center'
+                },
+                media:{
+                    "border-radius": "10px",
+                    'box-shadow': '0 0 1px grey'
+                },
+                img:{
+                    'width': '100%'
+                },
+                h3:{
+                    'padding': '13px',
+                    'font-size': '20px'
+                },
+                name:{
+                    'padding-left': '13px',
+                }
+            },
+            methods: {}
+        })
+
+        $(function() {
+        $(".btn").click(function(){
+            $(this).button('loading').delay(1000).queue(function() {
+            // $(this).button('reset');
+            // $(this).dequeue(); 
+            });
+        });
+    });  
+    </script>
+</body>
+</html>

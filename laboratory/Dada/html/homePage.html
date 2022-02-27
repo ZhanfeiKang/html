@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>搭搭</title>
+
+    <link rel="icon" type="image/x-icon" href="../images/icon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/homePage.css">
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- 页眉部分 -->
+    <header class="container-fluid">
+        <div class="row">
+            <a href="#">
+                <img src="../images/top_banner.png" title="推广或节日主题图片" class="img-responsive">
+            </a>
+        </div>
+        <div class="row bggrey row_1">
+            <div class="container">
+                <div class="col-md-3 col-xs-12"><a href="#">荆州<img src="../images/location.png" alt=""></a></div>
+                <div class="col-md-1 col-xs-2"><a href="#">登录</a></div>
+                <div class="col-md-1 col-xs-2"><a href="#">注册</a></div>
+                <div class="col-md-1 col-xs-2"><a href="#">签到</a></div>
+                <div class="col-md-1 col-xs-2"><a href="#">客服</a></div>
+                <div class="col-md-1 col-xs-2"><a href="#">更多</a></div>
+            </div>
+        </div>
+        <div class="fixed-bar">
+            <a href="#">
+                <img src="../images/user.png" alt="">
+                <p>账号</p>
+            </a>
+            <a href="#">
+                <img src="../images/message.png" alt="">
+                <p>消息</p>
+            </a>
+            <a href="#">
+                <img src="../images/shopBag.png" alt="">
+                <p>购物袋</p>
+            </a>
+            <a href="#">
+                <img src="../images/orederForm.png" alt="">
+                <p>订单</p>
+            </a>
+            <a href="#">
+                <img src="../images/track.png" alt="">
+                <p>足迹</p>
+            </a>
+            <a href="#" class="fixed-bar-last">
+                <img src="../images/collect.png" alt="">
+                <p>收藏</p>
+            </a>
+        </div>
+        <div class="container">
+            <div class="row row_2">
+                
+                <div class="col-md-3 col-xs-1">
+                    <a href="#">
+                        <img src="../images/logo1.png" alt="" class="img-responsive">
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-xs-12">
+                    <div class="row">
+                        <div class="input-group">
+                            <input type="text" class="form-control search_input" placeholder="年轻人的穿搭">
+                            <span class="input-group-btn">
+                                <button class="btn search_btn" type="button">搜索</button>
+                                <!-- <a href="#" class="search_btn">搜索</a> -->
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row row_2_2">
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#">羽绒服</a>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#">毛衣</a>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#">女鞋</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-2 col-md-push-1 col-xs-6">
+                    <div class="alert QRcode" role="alert" style="padding-top: 0px;">
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-disabled="true">&times;</span>
+                        </button>
+                        <p>手机搭搭</p>
+                        <div>
+                            <img src="../images/QRcode.jpg" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体部分 -->
+    <div class="container">
+        <!-- 菜单条 -->
+        <div class="row">
+            <div class="col-md-12 nav_bar">
+                <div><a href="#">首页</a></div>
+                <div><a href="#">今日爆款</a></div>
+                <div><a href="#">今日精选</a></div>
+                <div><a href="#">私人订制</a></div>
+                <div class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">业务合作<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">企业号</a></li>
+                        <li><a href="#">品牌合作人</a></li>
+                        <li><a href="#">同城合作人</a></li>
+                        <li><a href="#">招商合作</a></li>
+                    </ul>
+                </div>
+                <div><a href="#">关于我们</a></div>
+                <div><a href="#">加入我们</a></div>
+                <div><a href="#">更多</a></div>
+            </div>
+        </div>
+
+        <!-- 轮播图，广告 -->
+        <div class="row row_4">
+            <div class="container">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                  
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <a href="#"><img src="../images/banner_1.jpg" alt="..." title="这是广告轮播图"></a>
+                      </div>
+                      <div class="item">
+                        <a href="#"><img src="../images/banner_2.jpg" alt="..."></a>
+                      </div>
+                      <div class="item">
+                        <a href="#"><img src="../images/banner_3.jpg" alt="..."></a>
+                      </div>
+                      
+                    </div>
+                  
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </div>
+
+        <!-- 今日爆搭专区 -->
+        <div class="row row_5">
+            <div class="col-md-12 row_5_1">
+                <div class="row_5-title"></div>
+                <div class="row_5-title-text">今日爆搭专区</div>
+                <div class="row_5-title"></div>
+            </div>
+        </div>
+        <div class="row">
+            <h3>排行榜</h3>
+        </div>
+        <div class="row row_7">
+            <div class="col-md-2 col-xs-4">
+                <a href="#">TOP1</a>
+                <span>工作</span>
+            </div>
+            <div class="col-md-2 col-xs-4">
+                <a href="#">TOP1</a>
+                <span>约会</span>
+            </div>
+            <div class="col-md-2 col-xs-4">
+                <a href="#">TOP1</a>
+                <span>校园</span>
+            </div>
+            <div class="col-md-2 col-xs-4">
+                <a href="#">TOP1</a>
+                <span>旅行</span>
+            </div>
+            <div class="col-md-2 col-xs-4">
+                <a href="#">TOP1</a>
+                <span>日常</span>
+            </div>
+        </div>
+
+        <!-- 搭商铺专区 -->
+        <div class="row row_5 row_8">
+            <div class="col-md-12 row_5_1">
+                <div class="row_5-title"></div>
+                <div class="row_5-title-text">搭商铺专区</div>
+                <div class="row_5-title"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="local">
+                    本地
+                </div>
+            </div>
+
+            <div class="col-md-7 col-md-push-2">
+                <div class="row city">
+                    <div class="col-md-2 col-xs-3">
+                        <a href="#">武汉</a>
+                    </div>
+                    <div class="col-md-2 col-xs-3">
+                        <a href="#">长江</a>
+                    </div>
+                    <div class="col-md-2 col-xs-3">
+                        <a href="#">南京</a>
+                    </div>
+                    <div class="col-md-2 col-xs-3">
+                        <a href="#">重庆</a>
+                    </div>
+                    <div class="col-md-2 col-xs-3">
+                        <a href="#">成都</a>
+                    </div>
+                    <div class="col-md-2 col-xs-3">
+                        <a href="#">宜昌</a>
+                    </div>
+                </div>
+                <div class="row city">
+                    <div class="col-md-2 col-xs-3">
+                        <a href="#">北京</a>
+                    </div>
+                    <div class="col-md-2 col-xs-3">
+                        <a href="#">上海</a>
+                    </div>
+                    <div class="col-md-2 col-xs-3">
+                        <a href="#">广州</a>
+                    </div>
+                    <div class="col-md-2 col-xs-3">
+                        <a href="#">深圳</a>
+                    </div>
+                    <div class="col-md-2 col-xs-3">
+                        <a href="#">其他...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚部分 -->
+    <footer class="container-fluid html_foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h4>联系方式</h4>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p>工作时间：8:00-19:00</p>
+                            <p>咨询电话：15807297461</p>
+                            <p>客服邮箱：2685246582@qq.com</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="../images/contact.jpg" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-5">
+                    <h4>合作伙伴</h4>
+                    <p>谁谁谁</p>
+                    <p>...</p>
+                </div>
+            </div>
+
+            <a href=""></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "Microsoft YaHei";
+	color: #282828;
+}
+body{
+	/*background-color: rgb(250,250,250);*/
+	background: url(../images/homeBG.jpg) no-repeat;
+}
+
+.biggest{
+	height: 820px;
+	width: 1128px;
+	margin: auto;
+	padding-top: 30px;
+	position: relative;
+	/*border: 1px solid red;*/
+}
+
+.top{
+	font-size: 20px;
+	height: 32px;
+	width: 200px;
+	/*border: 1px solid;*/
+	margin: auto;
+	background: url(../img/register/smart_logo.png) no-repeat ;
+	padding: 5px 0 0 39px;
+}
+
+.logister{
+	width: 362px;
+	height: 620px;
+	/*border: 1px solid;*/
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 4px;
+	margin: auto;
+	margin-top: 50px;
+	padding: 36px 90.5px 26px 90.5px;
+	/*box-shadow: #F5F5DC 2px 2px 2px 2px;*/
+}
+
+.re-form{
+	width: 362px;
+	height: 566px;
+	/*margin-top: 5px;*/
+}
+
+.re-form span{
+	color: red;
+}
+
+
+.re-form label{
+	font-size: 16px;
+	margin-top: 28px;
+	display: block;
+}
+.re-form .inputStyle{
+	width: 344.5px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 16px;
+	color: grey;
+	display: block;
+	padding-left: 15px;
+	border: 0.7px solid #D3D3D3;
+	border-radius: 5px;
+	margin-top: 2px;
+}
+
+.error{
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	color: rgb(246,111,106);
+	display: none;
+}
+
+.re-form a{
+	display: block;
+}
+.forget-pwd{
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.register-btn{
+	width: 100%;
+	height: 48px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 48px;
+	background-color: rgb(246,111,106);
+	border-radius: 5px;
+	text-align: center;
+	color: rgb(255,255,255);
+	margin-top: 40px;
+}
+
+.sign{
+	width: 100%;
+	height: 80px;
+	line-height: 75px;
+	font-size: 18px;
+	text-align: center;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.more-help{
+	font-size: 14px;
+	width: 150px;
+	height: 19px;
+	background: url(../img/register/help.png) no-repeat;
+	padding-left: 22px;
+	margin-top: 20px;
+}

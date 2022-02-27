@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/smartCabinet.css">
+	<link rel="icon" type="image/x-icon" href="../images/icon.png">
+	<title>登录-搭搭</title>
+</head>
+<body>
+	<div class="biggest">
+		<div class="top">
+			搭搭-年轻人的穿搭
+		</div>
+
+		<div class="logister">
+			<h1>登录</h1>
+			<form class="re-form">
+				<label>账号<span>*</span></label>
+				<input class="inputStyle" id="userName" type="text" name="" placeholder="请输入账号">
+				<div class="error">账号 不能为空</div>
+
+				<label>密码<span>*</span></label>
+				<input class="inputStyle" type="password" id="password" name="" placeholder="请输入密码">
+				<div class="error">密码 不能为空</div>
+
+				<a href="#" class="forget-pwd">忘记密码</a>
+
+				<a href="#" class="register-btn">登录</a>
+				<a href="./createUser.html" class="sign">立即注册 ></a>
+				
+				<a href="#" class="more-help">获取更多帮助？</a>
+			</form>
+		</div>
+	</div>
+
+	<script src="../js/jquery-3.2.1.js"></script>
+	<script>
+		$(".register-btn").click(()=>{
+
+			// $.ajax({
+			// 	type:"POST"
+
+			// })
+			$.post("http:localhost:8080/login",
+				{
+					userName:$("#userName").val(),
+					password:$("#password").val()
+				},
+				function(res){
+					if(res.id != 500 ) location.href = "./homePage2.html"
+				})	
+		})
+		
+	</script>
+</body>
+</html>
